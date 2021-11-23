@@ -1,1 +1,1 @@
-# Openweathermap-testing-API-
+# Openweathermap-testing-API
