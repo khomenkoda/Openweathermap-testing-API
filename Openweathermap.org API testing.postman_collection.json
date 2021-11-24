@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "d52cde28-7cba-48a0-b55c-751b0c41d914",
+		"name": "Openweathermap.org API testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 Call current weather data for one location by city name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=chernihiv&appid=462b0518850077af55a97fc9a0e0450a",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "chernihiv"
+						},
+						{
+							"key": "appid",
+							"value": "462b0518850077af55a97fc9a0e0450a"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?q=chernihiv&appid=462b0518850077af55a97fc9a0e0450a",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "chernihiv"
+								},
+								{
+									"key": "appid",
+									"value": "462b0518850077af55a97fc9a0e0450a"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "openresty"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 17 Nov 2021 11:10:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "493"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Cache-Key",
+							"value": "/data/2.5/weather?q=chernihiv"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"coord\": {\n        \"lon\": 32,\n        \"lat\": 51\n    },\n    \"weather\": [\n        {\n            \"id\": 802,\n            \"main\": \"Clouds\",\n            \"description\": \"scattered clouds\",\n            \"icon\": \"03d\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 275.12,\n        \"feels_like\": 272.1,\n        \"temp_min\": 275.12,\n        \"temp_max\": 275.12,\n        \"pressure\": 1028,\n        \"humidity\": 39,\n        \"sea_level\": 1028,\n        \"grnd_level\": 1013\n    },\n    \"visibility\": 10000,\n    \"wind\": {\n        \"speed\": 2.9,\n        \"deg\": 194,\n        \"gust\": 3.9\n    },\n    \"clouds\": {\n        \"all\": 36\n    },\n    \"dt\": 1637147454,\n    \"sys\": {\n        \"country\": \"UA\",\n        \"sunrise\": 1637125901,\n        \"sunset\": 1637157752\n    },\n    \"timezone\": 7200,\n    \"id\": 710734,\n    \"name\": \"Chernihiv\",\n    \"cod\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "2 Call current weather data for one location by geographic coordinates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?lat=51.498200&lon=31.289350&appid=462b0518850077af55a97fc9a0e0450a",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "51.498200"
+						},
+						{
+							"key": "lon",
+							"value": "31.289350"
+						},
+						{
+							"key": "appid",
+							"value": "462b0518850077af55a97fc9a0e0450a"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "2 Call current weather data for one location by geographic coordinates",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?lat=51.498200&lon=31.289350&appid=462b0518850077af55a97fc9a0e0450a",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "51.498200"
+								},
+								{
+									"key": "lon",
+									"value": "31.289350"
+								},
+								{
+									"key": "appid",
+									"value": "462b0518850077af55a97fc9a0e0450a"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "openresty"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 17 Nov 2021 11:11:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "521"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Cache-Key",
+							"value": "/data/2.5/weather?lat=51.5&lon=31.29"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"coord\": {\n        \"lon\": 31.2894,\n        \"lat\": 51.4982\n    },\n    \"weather\": [\n        {\n            \"id\": 801,\n            \"main\": \"Clouds\",\n            \"description\": \"few clouds\",\n            \"icon\": \"02d\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 276.66,\n        \"feels_like\": 273.48,\n        \"temp_min\": 276.66,\n        \"temp_max\": 276.66,\n        \"pressure\": 1027,\n        \"humidity\": 36,\n        \"sea_level\": 1027,\n        \"grnd_level\": 1012\n    },\n    \"visibility\": 10000,\n    \"wind\": {\n        \"speed\": 3.53,\n        \"deg\": 193,\n        \"gust\": 4.7\n    },\n    \"clouds\": {\n        \"all\": 15\n    },\n    \"dt\": 1637147476,\n    \"sys\": {\n        \"type\": 2,\n        \"id\": 2041348,\n        \"country\": \"UA\",\n        \"sunrise\": 1637126182,\n        \"sunset\": 1637157811\n    },\n    \"timezone\": 7200,\n    \"id\": 710735,\n    \"name\": \"Chernihiv\",\n    \"cod\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "Call current weather data for one location by city ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?id=710735&appid=462b0518850077af55a97fc9a0e0450a",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "710735"
+						},
+						{
+							"key": "appid",
+							"value": "462b0518850077af55a97fc9a0e0450a"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Call current weather data for one location by city ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?id=710735&appid=462b0518850077af55a97fc9a0e0450a",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "710735"
+								},
+								{
+									"key": "appid",
+									"value": "462b0518850077af55a97fc9a0e0450a"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "openresty"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 17 Nov 2021 11:11:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "521"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Cache-Key",
+							"value": "/data/2.5/weather?id=710735"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"coord\": {\n        \"lon\": 31.2849,\n        \"lat\": 51.5055\n    },\n    \"weather\": [\n        {\n            \"id\": 801,\n            \"main\": \"Clouds\",\n            \"description\": \"few clouds\",\n            \"icon\": \"02d\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 276.63,\n        \"feels_like\": 273.44,\n        \"temp_min\": 276.63,\n        \"temp_max\": 276.63,\n        \"pressure\": 1027,\n        \"humidity\": 36,\n        \"sea_level\": 1027,\n        \"grnd_level\": 1011\n    },\n    \"visibility\": 10000,\n    \"wind\": {\n        \"speed\": 3.53,\n        \"deg\": 193,\n        \"gust\": 4.7\n    },\n    \"clouds\": {\n        \"all\": 14\n    },\n    \"dt\": 1637147341,\n    \"sys\": {\n        \"type\": 2,\n        \"id\": 2041348,\n        \"country\": \"UA\",\n        \"sunrise\": 1637126185,\n        \"sunset\": 1637157811\n    },\n    \"timezone\": 7200,\n    \"id\": 710735,\n    \"name\": \"Chernihiv\",\n    \"cod\": 200\n}"
+				}
+			]
+		}
+	]
+}
