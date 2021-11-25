@@ -1,1 +1,2 @@
-# Openweathermap-testing-API
+Task.
+Создать коллекцию в Postman и протестировать несколько запросов про погоду, используя API из https://openweathermap.org. Сохранить коллекцию, запросы и ответы с сервера.
